@@ -73,6 +73,7 @@
           position: 'fixed',
           top: 0
         });
+        sticky.el.addClass("stuck");
       }
 
       // Determines the sidebar orientation and sets margins accordingly
@@ -91,6 +92,7 @@
           'margin-left': '0px'
         });
         settings.contentID.css('margin-left', '0px');
+        sticky.el.removeClass("stuck");
       }
 
       // initiated to stop the sidebar from intersecting the footer
